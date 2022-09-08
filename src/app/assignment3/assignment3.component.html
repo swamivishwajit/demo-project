@@ -1,0 +1,8 @@
+<p>Below is Assignment 3</p>
+<button class="btn btn-primary" (click)="onDiaplayDetails()">Display Details</button>
+<p *ngIf="showDetails">I am learning Angular</p>
+<p 
+    *ngFor="let detail of secretDetails;let indexdetail = index" 
+    [ngStyle]="{backgroundColor: indexdetail >=5 ? 'blue' : 'white'}" 
+    [ngClass]="{colorWhite: indexdetail >= 5}">Index is: {{indexdetail}} Detail is: {{detail}}
+</p>
